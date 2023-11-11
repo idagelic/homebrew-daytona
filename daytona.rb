@@ -6,7 +6,7 @@ class Daytona < Formula
   if OS.mac? && Hardware::CPU.arm?
     url "https://download.daytona.io/latest/daytona-darwin-arm64"
     sha256 "<<DARWIN_ARM64_SHA256>>"
-  elseif OS.mac? && Hardware::CPU.intel?    
+  elsif OS.mac? && Hardware::CPU.intel?    
     url "https://download.daytona.io/latest/daytona-darwin-amd64"    
     sha256 "<<DARWIN_AMD64_SHA256>>"
   elsif OS.linux? && Hardware::CPU.intel?
