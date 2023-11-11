@@ -19,8 +19,6 @@ class Daytona < Formula
     odie "Unsupported OS/ARCH combination"
   end
 
-  bottle :unneeded
-
   def install
     bin.install "daytona-#{OS.mac? ? 'darwin' : 'linux'}-#{Hardware::CPU.intel? ? 'amd64' : 'arm64'}" => "daytona"
   end
